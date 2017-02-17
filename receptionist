@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Receptionist Registration</title>
+</head>
+<body>
+  <center>
+    <p><h1><u>Receptionist Registration</u></h1></p>
+  </center>
+  <p><h2>Enter your details</h2></p>
+  <form>
+    <table border = 1>
+       <tr>
+	          <td>Name:</td>
+          	<td><input type="text" name="name"></td>
+       </tr>
+       <tr>
+	           <td>EMP ID:</td>
+	           <td><input type="text" name="empid"></td>
+       </tr>
+        <tr>
+	            <td>Address:</td>
+	            <td><input type="text" name="address"></td>
+       </tr>
+       <tr>
+	            <td>Bank ID:</td>
+	            <td><input type="text" name="bid"></td>
+       </tr>
+      </table>
+   <br><input type='button' value='submit' onclick='alert("Submitted Successfully!")'>
+</form>
+</body>
+</html>
