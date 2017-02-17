@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Donor Registration</title>
@@ -7,35 +8,52 @@
 <p><h1><u>Donor Registration</u></h1></p>
 </center>
 <p><h2>Enter your details</h2></p>
-<form>
+<style>
+body
+{
+	background-color:white;
+}
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td
+{
+    padding: 10px;
+}
+html
+{
+	font-family:arial;
+	font-family-colour:white;
+}
+</style>
+<form id=donform method=get>
 <table border = 1>
 <tr>
-	<td>Name:</td>
-	<td><input type="text" name="name"></td>
+	<td><label for="name">Name:</label></td>
+	<td><input type="text" id="name" name="name"></td>
 </tr>
 <tr>
-	<td>Donor ID:</td>
-	<td><input type="text" name="donid"></td>
+	<td><label for="donid">Donor ID:</td>
+	<td><input type="text" id="donid" name="donid"></td>
 </tr>
 <tr>
-	<td>Sex:</td>
-	<td><center>Male<input type="radio" name="sex"value='male'>
-	Female<input type="radio" name="sex" value='female'></center></td>
+	<td><label for="sex">Sex:</td>
+	<td><center>Male<input type="radio" name="sex" id="sex" value='male'>
+	Female<input type="radio" name="sex" id="sex" value='female'></center></td>
 </tr>
 <tr>
-	<td>Date of Birth:</td>
-	<td><input type="text" name="dob" default='dd-mm-yyyy' ></td>
+	<td><label for="dob">Date of Birth:</td>
+	<td><input type="text" id="dob" name="dob" default='dd-mm-yyyy' ></td>
 </tr>
 <tr>
-	<td>Address:</td>
-	<td><input type="text" name="address"></td>
-</tr>
-<tr>
-	<td>Donor ID:</td>
-	<td><input type="text" name="donid"></td>
+	<td><label for="address">Address:</td>
+	<td><textarea rows="5" cols="25" id="address" name="address" form="donform"></textarea></td>
 </tr>
 </table>
-<br><input type='button' value='submit' onclick='alert("Submitted Successfully!")'>
+<br><input type='submit' value='submit' onclick='alert("Submitted Successfully!")'>
+<input type='reset' value='reset'>
 
 </form>
 </body>
