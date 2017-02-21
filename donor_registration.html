@@ -27,7 +27,7 @@ html
 	font-family:arial;
 }
 </style>
-<form id='donform' method='post'>
+<form action='process.php' id='donform' method='post'>
 <table border = 1>
 <tr>
 	<td><label for="name">Name:</label></td>
@@ -51,7 +51,7 @@ html
 	<td><textarea rows="5" cols="25" id="address" name="address" form="donform"></textarea></td>
 </tr>
 </table>
-<br><input type='submit' value='submit' onclick='alert("Submitted Successfully!")'>
+<br><input type='submit' value='submit' name='submit'>
 <input type='reset' value='reset'>
 
 </form>
