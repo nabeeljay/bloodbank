@@ -9,6 +9,10 @@
 </center>
 <p><h2>Enter your details</h2></p>
 <style>
+html
+{
+	font-family:arial;
+}
 body
 {
 	background-color:rgb(228,189,209);
@@ -22,12 +26,8 @@ th, td
 {
     padding: 10px;
 }
-html
-{
-	font-family:arial;
-}
 </style>
-<form action='process.php' id='donform' method='post'>
+<form action="process.php" method="post" id='donreg'>
 <table border = 1>
 <tr>
 	<td><label for="name">Name:</label></td>
@@ -35,20 +35,20 @@ html
 </tr>
 <tr>
 	<td><label for="donid">Donor ID:</td>
-	<td><input type="text" id="donid" name="donid"></td>
+	<td><input type="number" id="donid" name="donid" min="100000000000" max="999999999999" ></td>
 </tr>
 <tr>
 	<td><label for="sex">Sex:</td>
-	<td><center>Male<input type="radio" name="sex" id="sex" value='m'>
-	Female<input type="radio" name="sex" id="sex" value='f'></center></td>
+	<td><center>Male<input type="radio" name="sex" id="sex" value='male'>
+	Female<input type="radio" name="sex" id="sex" value='female'></center></td>
 </tr>
 <tr>
 	<td><label for="dob">Date of Birth:</td>
-	<td><input type="text" id="dob" name="dob" default='yyyy-mm-dd' ></td>
+	<td><input type="date" id="dob" name="dob" default='yyyy-mm-dd' ></td>	
 </tr>
 <tr>
 	<td><label for="address">Address:</td>
-	<td><textarea rows="5" cols="25" id="address" name="address" form="donform"></textarea></td>
+	<td><textarea rows="5" cols="25" id="address" name="address" form="donreg"></textarea></td>
 </tr>
 </table>
 <br><input type='submit' value='submit' name='submit'>
