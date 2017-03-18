@@ -1,60 +1,108 @@
 <html>
+
 <head>
-  <title>Recipient Registration</title>
-</head>
-<body>
-<center>
-<p><h1><u>Recipient Registration</u></h1></p>
-</center>
-<p><h2>Enter your details</h2></p>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
-body
-{
-	background-color:rgb(163,255,255);
+button {
+    color: white;
+    height:40px;
+    width:118px;
+    background-color: #87CEEB;
+    font-family: verdana;
+    font-weight:bold;
+    font-size: 100%;
+    border: 0;
 }
-table, th, td 
-{
-    border: 1px solid rgb(255,0,6);
-    border-collapse: collapse;
-}
-th, td
-{
-    padding: 10px;
-}
-html
-{
-	font-family:arial;
-	font-family-colour:white;
-}
-</style>
-  <form>
-    <table border = 1>
-       <tr>
-	          <td>Name:</td>
-          	<td><input type="text" name="name"></td>
-       </tr>
-       <tr>
-	           <td>EMP ID:</td>
-	           <td><input type="text" name="empid"></td>
-       </tr>
-	    <tr>
-	           <td>HOSPITAL ID:</td>
-	           <td><input type="text" name="hid"></td>
-       </tr>
-        <tr>
-	            <td>Address:</td>
-	            <td><input type="text" name="address"></td>
-       </tr>
-       <tr>
-	            <td>PHONE NO.</td>
-	            <td><input type="text" name="phno"></td>
-       </tr>
-	<tr>
-	            <td>BLOOD GROUP</td>
-	            <td><input type="text" name="bgrp"></td>
-       </tr>
-      </table>
-   <br><input type='button' value='submit' onclick='alert("Submitted Successfully!")'>
+body {
+	
+	background-image:url("http://nis2.org/wp-content/uploads/2016/04/img_hbd_bg.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#0087be;
+	}
+
+form {
+	
+	width:450;
+	background-color:white;
+	opacity:0.8;
+	}
+</style>	
+</head>
+
+
+<body class="">
+
+
+
+
+<div>
+	<div>
+		<center>
+		<p></p>
+		<u><b><font size="30">Recipient Registration</font></b></u>
+		<p></p>
+
+		<p></p>
+		<u><h1>Enter your details</h1></u>
+		<p></p>
+
+		<form target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+			<table border="0">
+			<tbody><tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Name:</b></center></label></td>
+			</tr>
+			<tr>
+				<td style="LINE-HEIGHT:40px"><center><input style="font-size:15px" type="text" name="name"></center></td>
+			</tr>
+			<tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><label><center><b>Emp ID:</b></center></label></td>
+			</tr>
+			<tr>
+				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="empid"></center></td>
+			</tr>
+		        <tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><label><center><b>Hospital ID:</b></center></label></td>
+			</tr>
+			<tr>
+				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="hid"></center></td>
+			</tr>
+		        
+			<tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Address:</b></center></label></td>
+			</tr>
+
+			<tr>
+				<td><center><textarea style="font-size:18px; font-family:verdana;" rows="5" cols="30" name="address"></textarea></center></td>
+			</tr>
+
+			
+			<tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><label><center><b>Phone No:</b></center></label></td>
+			</tr>
+			<tr>
+				<td><center><input style="font-size:18px;  font-family:verdana;" type="tel" name="phno"></center></td>
+			</tr>
+						<tr>
+				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Blood Group:</b></center></label></td>
+			</tr>
+			<tr>
+				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="bgrp"></center></td>
+			</tr>
+			</tbody></table>
+			
+			<br>
+			<br>
+				<button type="submit" value="submit" name="submit">Submit</button>
+
+				
+
+			<br><br>
+				<font color="red">All fields are mandatory</font>
+			<br>
+</center>
 </form>
-</body>
-</html>
+</div>
+<div id="wpsn-container" class="wpsn-container" style="position: absolute; top: 0px; left: 0px;"><span class="wpsn-preloadfont" style="visibility:hidden">a</span></div><div id="wpsn-popup-container" class="wpsn-popup-container" style="position: fixed; top: 0px; left: 0px; display: none;"></div>
+
