@@ -46,7 +46,13 @@ else {
 	}
 $conn->close();
 ?>
-	</table>
+</table>
+<a href="mailto:kg9810@gmail.com?subject=query&body=message">
+	DROP YOUR REQUEST
+	</a>
+	<center><a href="index.html"> BACK TO TOP</a>
+	</center>
+	
 </body>
 </html>
 
