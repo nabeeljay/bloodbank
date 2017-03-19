@@ -1,6 +1,62 @@
 <html>
+<title>Blood Donation</title>	
 <body>
+	<style>
+	html {
+	font-family: 'Open Sans', sans-serif;
+	}
+	body
+	{
+		
+		background-image: url("wall.jpg");
+		background-attachement:center;
+		background-size:cover;
+	 }
+	img
+	{
+		border: 1px solid #ddd;
+	    	border-radius: 2px;
+	    	padding: 5px;
+	    	width: 150px;
+	}
+	img:hover 
+	{
+		box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	}
+	h1
+	{
+		color:red;
+		text-decoration: underline;
+	}
+	p {
+    		color:white;
+	}
+	a:link {
+    color: white;
+	}
+	a:visited {
+    color: white;
+	}
 	
+	blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+	</style>
 <table border="1" bordercolor="green"bgcolor="yellow">
 <tr>
 	<td>Name</td>
