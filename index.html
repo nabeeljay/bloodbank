@@ -66,7 +66,7 @@
   box-shadow: 2px 2px 10px #ccc;
 }
 
-blockquote::before{
+blockquote before{
   content: "\201C"; /*Unicode for Left Double Quote*/
   
   /*Font*/
@@ -88,7 +88,7 @@ blockquote::after{
 blockquote em{
   font-style: italic;
 }
-	blockquote cite {
+blockquote cite {
 color: rgb(156,0,100);
 font-size: 16px;
 display:flexbox;
@@ -102,7 +102,7 @@ content: "\2014 \2009";
   background: #2db34a;
   border-radius: 6px;
   color: #fff;
-  display:inline-block;
+  display:block;
   font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
   padding: 10px 10px;
   text-align: center;
@@ -120,7 +120,7 @@ footer {
     <center><h1>Online Blood Bank</h1>
 	</center>
 	
-	<blockquote>You Have The Most Precious Resource Of All:       The Ability To <em>Save A Life</em> By Donating Blood! <br>
+	<blockquote><before> </before>You Have The Most Precious Resource Of All:       The Ability To <em>Save A Life</em> By Donating Blood! <br>
 		<center>Help Share This Invaluable Gift With Someone In Need.</center>
 		<cite>~bloodbank</cite>
 		</blockquote>	
