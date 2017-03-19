@@ -1,6 +1,7 @@
 <html>
 <body>
-<table border=1 >
+	
+<table border="1" bordercolor="green"bgcolor="yellow">
 <tr>
 	<td>Name</td>
 	<td>Aadhar Number</td>
@@ -45,7 +46,7 @@ else {
 	}
 $conn->close();
 ?>
-</table>
+	</table>
 </body>
 </html>
 
