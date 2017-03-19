@@ -1,0 +1,88 @@
+<html>
+<title>donor login</title>	
+<body>
+	<style>
+	html {
+	font-family: 'Open Sans', sans-serif;
+	}
+	body
+	{
+		
+		background-image: url("https://www.google.co.in/search?q=donor&rlz=1C1CHBF_enIN720IN720&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiX8ceI6uLSAhURTY8KHZZyDHMQ_AUIBygC&biw=1442&bih=643#tbm=isch&q=blood+donor+background+hd&*&imgrc=jFDZy3nRgFStHM:");
+		background-attachement:center;
+		background-size:cover;
+	 }
+	h1
+	{
+		color:red;
+		text-decoration: underline;
+	}
+	p {
+    		color:white;
+	}
+	a:link {
+    color: white;
+	}
+	a:visited {
+    color: white;
+	}
+	
+	blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+	</style>
+<table border="1" bordercolor="green"bgcolor="yellow">
+<tr>
+	<td>Name</td>
+	<td>Aadhar Number</td>
+	<td>Date of Birth</td>
+</tr>
+<tr>
+<?php 
+ require 'connection.php';
+ $conn    = Connect();
+ $db = "donreg";
+ $sql ="SELECT * FROM donreg where donreg.name=";
+ $result = mysqli_query($conn,$sql);
+ $num = mysqli_num_rows($result);
+ if ($num > 0) {
+	while($num > 0) {
+	$row = mysqli_fetch_array($result);
+	$name=$row["name"];
+	$donid=$row["donid"];
+	$sex=$row["sex"];
+	$dob=$row["dob"];
+	$bgroup=$row["bgroup"];
+	$rh=$row["rh"];
+	$address=$row["address"];
+	echo "<tr>
+		<td>$name</td>
+		<td>$donid</td>
+		<td>$sex</td>
+		<td>$dob</td>
+		<td>$bgroup</td>
+		<td>$rh</td>
+		<td>$address</td>
+	</tr>";
+	$num=$num - 1;
+	}
+ }
+else {
+		echo "0 results";
+	}
+$conn->close();
+?>
+</table>
+<a href="mailto:kg9810@gmail.com?subject=query&body=message">
+	DROP YOUR REQUEST
+	</a>
+	<center><a href="index.html"> BACK TO TOP</a>
+	</center>
+	
+</body>
+</html>
+
