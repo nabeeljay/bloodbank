@@ -46,19 +46,19 @@
   display:block;
   background:rgb(125,124,200);
   padding: 15px 20px 15px 20px;
-  margin: 0 0 15px;
+  margin: 0 0 0px;
   position: relative;
   
   /*Font*/
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
-  color: ;
+  color: #000000 ;
   text-align: justify;
   
   /*Borders */
   border-left: 15px solid #c76c0c;
-  border-right: 10px solid #c76c0c;
+  border-right: 15px solid #c76c0c;
   
   /*Box Shadow */
   -moz-box-shadow: 2px 2px 15px #ccc;
@@ -70,10 +70,10 @@ blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
   
   /*Font*/
-  font-family: Georgia, serif;
+ /* font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
-  color: #000000 ;
+  color: #000000 ; */
   
   /*Positioning*/
   position: absolute;
@@ -83,7 +83,7 @@ blockquote::before{
 
 blockquote::after{
   /*Reset to make sure*/
-  content: "";
+  content: "\201C";
 }
 
 blockquote a{
