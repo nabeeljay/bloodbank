@@ -8,7 +8,7 @@
 	body
 	{
 		
-		background-image: url("wall.jpg");
+		background-image: url("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwia06as--LSAhVEPI8KHac2C98QjRwIBw&url=http%3A%2F%2Fwww.zingerbug.com%2FBackgrounds%2Findex_pages%2Fsmiley_faces_page1.htm&psig=AFQjCNFl5KY1Co00qI-RVB8GiyMbd2D68Q&ust=1490026402468197");
 		background-attachement:center;
 		background-size:cover;
 	 }
