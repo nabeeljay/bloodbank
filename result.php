@@ -1,5 +1,5 @@
 <html>
-<title>Blood Donation</title>	
+	<title>result</title>
 <body>
 	<style>
 	html {
