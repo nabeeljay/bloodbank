@@ -104,28 +104,43 @@ margin-top: 5px;
 blockquote cite:before {
 content: "\2014 \2009";
 }
-	code {
-  background: #2db34a;
-  border-radius: 6px;
-  color: #fff;
-  display:inline-block;
-  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-  padding: 10px 10px;
-  text-align: center;
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-header,
-section,
-aside,
-footer {
-  margin: 0 1.5% 24px 1.5%;
+
+li {
+    float: left;
 }
-footer {
-  margin-bottom: 0;
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 	</style>
 	
 	<h11>ONLINE</h11><h12> BLOOD </h12><h13>BANK</h13>
 	<br>
+	<ul>
+  	<li><a class="active" href="#home">Home</a></li>
+  	<li><a href='recipient.htm'>Recipient Registration</a></li>
+  	<li><a href='BANK_REGISTRATION.html'>Blood bank Registration</a></li>
+ 	<li><a href='result.php'>Registered Donors</a></li>
+	</ul>
 	<br>
 	<blockquote>You Have The Most Precious Resource Of All:       The Ability To <em>Save A Life</em> By Donating Blood! <br>
 		<center>Help Share This Invaluable Gift With Someone In Need.</center>
@@ -140,20 +155,6 @@ footer {
 	</p></h3>
 		<br>
 		<br>
-<header>
-	<code><h2><a href='donor.html'><u>Donor Registration</u></a></h2></code>
-</header>
-
-<section>
-	<code><h2><a href='recipient.htm'><u>Recipient Registration</u></a></h2></code>
-</section>
-
-<aside>  <code><h2><a href='BANK_REGISTRATION.html'><u>Blood bank Registration</u></a></h2></code>
-</aside>
-
-<footer>
-  <code><h2><a href='result.php'>Registered Donors</a></h2></code>
-</footer>
 	
 	<h3><a href="#top">Back to top</a>
 		</h3>
