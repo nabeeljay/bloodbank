@@ -3,8 +3,11 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <title>Blood Donation</title>
 </head>
+
 <body>
 <style>
+	@use postcss-nested;
+	@use postcss-cssnext;
 	html {
 	font-family: 'Open Sans', sans-serif;
 	}
@@ -14,6 +17,120 @@
 		background-attachement:center;
 		background-size:cover;
 	 }
+	:root {
+    --font-size: 2vw;
+    --font-color: #C5BEAA;
+    --paper-color: #F9F8EF;
+    --paper-radius: 4px;
+    --paper-inclination: 8deg;
+    --background-color: #77EEDF;
+}
+:root {
+    --paper-shadow:                  color( var(--background-color) shade(50%) );
+    --bg-color-dark-shade30: color( var(--paper-color) shade(20%) );
+    --bg-color-dark-shade15: color( var(--paper-color) shade(5%) );
+    --transition-duration:   200ms;
+    --paper-light:                   color( var(--paper-color) lightness(+8%) );
+}h1.flag {
+    white-space: nowrap;
+    font-size: var(--font-size);
+    position: relative;
+    cursor: default;
+    
+    
+    /* Paper Shadow */
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: var(--paper-shadow);
+        width: 89%;
+        left: 4%;
+        height: 40%;
+        filter: blur(2vw);
+        transition: all var(--transition-duration) cubic-bezier(0.0, 0.0, 0.2, 1);
+    }
+    
+    /* Each letter */
+    span {
+        user-select: none;
+        display: inline-block;
+        width: 3em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+        
+        /* Solid Surface */
+        &:before {
+            content: '';
+            background-color: var(--paper-color);
+            transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        
+        /* Odd letters */
+        &:nth-child(odd) {
+            transform: skewY(-var(--paper-inclination));
+            color: color( var(--font-color) tint(35%) );
+            background: linear-gradient(-30deg, var(--paper-light), var(--bg-color-dark-shade15));
+            box-shadow: inset -1px 0 0px rgba(255, 255, 255, 0.3);
+            prospective: 1000px;
+        }
+        
+        /* Even letters */
+        &:nth-child(even) {
+            transform: skewY(var(--paper-inclination));
+            color: var(--font-color);
+            background: linear-gradient(87deg, var(--bg-color-dark-shade30), var(--bg-color-dark-shade15));
+            box-shadow: inset -1px 0 0px rgba(0, 0, 0, 0.05);
+            prospective: 1000px;
+        }   
+        
+        /* Paper border-radius */
+        &:first-of-type,
+        &:first-of-type:before {
+            border-radius: var(--paper-radius) 0 0 var(--paper-radius);
+        }
+        
+        &:last-of-type,
+        &:last-of-type:before {
+            border-radius: 0 var(--paper-radius) var(--paper-radius) 0;
+        }
+    }
+    
+    /* Hover interaction */
+    &:hover {
+        
+        &:before {
+            opacity: 0.5;
+            filter: blur(2px);
+            left: 1%;
+            width: 98%;
+        }
+        
+        span {
+            transform: none;
+            color: var(--font-color);
+            box-shadow: none;
+            transition-duration: var(--transition-duration);
+            width: 3.1em;
+                        
+            &:before {
+                opacity: 1;
+                transition-duration: var(--transition-duration);
+            }
+        }
+    }
+}
 	img
 	{
 		border: 1px solid #ddd;
@@ -134,7 +251,7 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 	</style>
-	
+	<h1 class="flag">TASTY.</h1>
 	<center><h11>ONLINE</h11><h12> BLOOD </h12><h13>BANK</h13></center>
 	<br>
 	<ul>
