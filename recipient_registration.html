@@ -33,22 +33,16 @@ form {
 
 
 <body class="">
-
-
-
-
 <div>
 	<div>
 		<center>
 		<p></p>
 		<u><b><font size="30">Recipient Registration</font></b></u>
 		<p></p>
-
 		<p></p>
 		<u><h1>Enter your details</h1></u>
 		<p></p>
-
-		<form target="_blank" action="process_rec.php" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+		<form target="_blank" action="process_rec.php" >
 			<table border="0">
 			<tbody><tr>
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Name:</b></center></label></td>
@@ -88,21 +82,24 @@ form {
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Blood Group:</b></center></label></td>
 			</tr>
 			<tr>
-				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="bgrp"></center></td>
+				<td><center>
+				<select name="bgroup"> 
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="AB">AB</option>
+					<option value="O">O</option>
+				</select>
+				<input style="font-size:15px; font-family:verdana;" type="radio" name="rh" id="rh" value='+'>+ve
+				<input style="font-size:15px; font-family:verdana;" type="radio" name="rh" id="rh" value='-'>-ve
+				</center></td>
 			</tr>
-			</tbody></table>
-			
-			<br>
-			<br>
-				<button type="submit" value="submit" name="submit">Submit</button>
-
-				
-
+			<button type="submit" value="submit" name="submit">Submit</button>
 			<br><br>
 				<font color="red">All fields are mandatory</font>
-			<br>
+			<br><br></tbody>
 </center>
 </form>
 </div>
 <div id="wpsn-container" class="wpsn-container" style="position: absolute; top: 0px; left: 0px;"><span class="wpsn-preloadfont" style="visibility:hidden">a</span></div><div id="wpsn-popup-container" class="wpsn-popup-container" style="position: fixed; top: 0px; left: 0px; display: none;"></div>
-
+</body>
+</html>
