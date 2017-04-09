@@ -12,20 +12,10 @@
 		background-attachement:center;
 		background-size:cover;
 	 }
-	img
-	{
-		border: 1px solid #ddd;
-	    	border-radius: 2px;
-	    	padding: 5px;
-	    	width: 150px;
-	}
 	h1
 	{
 		color:#800060;
 		text-decoration: underline;
-	}
-	p {
-    		color:white;
 	}
 	a:link {
     color: #660066;
