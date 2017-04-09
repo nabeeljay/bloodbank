@@ -41,7 +41,6 @@ img.avatar {
 .container {
     padding: 16px 350px;
     width: 44%;
-
 }
 span.psw {
     float: right;
@@ -56,11 +55,10 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
-
 }
 </style>
 <body>
-<form action="connectivity.php">
+<form action="connectivity2.php" method="POST" >
   <div class="imgcontainer">
     <img src="http://forchel.ru/templates/new_anime_ng/images/holidays/holidays_img/donor.jpg" alt="Avatar" class="avatar">
   </div>
@@ -72,8 +70,8 @@ span.psw {
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
+    <button type="submit" value="submit" name="submit" >Login</button>
+    <input type="checkbox" checked="checked">Remember me
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
