@@ -21,17 +21,17 @@
 	}
 	h1
 	{
-		color:red;
+		color:#800060;
 		text-decoration: underline;
 	}
 	p {
     		color:white;
 	}
 	a:link {
-    color: white;
+    color: #660066;
 	}
 	a:visited {
-    color: white;
+    color: #660066;
 	}
 	table {
 		color: #333;
@@ -42,14 +42,15 @@
 		}
 
 	td, th {
-		border: 1px solid transparent; /* No more visible border */
+		border: 1px solid #e6ccff; /* No more visible border */
 		height: 30px;
 		transition: all 0.3s; /* Simple transition for hover effect */
 			}
 
 	th {
-		background: #DFDFDF; /* Darken header a bit */
+		background: #cc99ff; /* Darken header a bit */
 		font-weight: bold;
+		text-align: center;		
 	}
 
 	td {
@@ -58,22 +59,24 @@
 	}
 
 	/* Cells in even rows (2,4,6...) are one color */
-	tr:nth-child(even) td { background: #F1F1F1; }
+	tr:nth-child(even) td { background: #b3b3ff; }
 
 	/* Cells in odd rows (1,3,5...) are another (excludes header cells) */
-	tr:nth-child(odd) td { background: #FEFEFE; }
+	tr:nth-child(odd) td { background: #ffb3b3; }
 
-	tr td:hover { background: #666; color: #FFF; } /* Hover cell effect! *
+	tr td:hover { background: #660033; color: #ffccff; } /* Hover cell effect! *
 	</style>
+	
+	<center><h1> DONOR'S LIST </h1></center>
 <table border="1">
 <tr>
-	<td>Name</td>
-	<td>Aadhar Number</td>
-	<td>Sex</td>
-	<td>Date of Birth</td>
-	<td>Blood Group</td>
-	<td>Rhesus</td>
-	<td>Address</td>
+	<th>Name</th>
+	<th>Aadhar Number</th>
+	<th>Sex</th>
+	<th>Date of Birth</th>
+	<th>Blood Group</th>
+	<th>Rhesus</th>
+	<th>Address</th>
 </tr>
 <tr>
 <?php 
@@ -113,8 +116,7 @@ $conn->close();
 </table>
 <a href="mailto:kg9810@gmail.com?subject=query&body=message">
 	DROP YOUR REQUEST
-	</a>
-	<center><a href="index.html"> BACK TO TOP</a>
+	</a><center><a href="index.html"> BACK TO TOP</a>
 	</center>
 	
 </body>
