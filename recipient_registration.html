@@ -21,7 +21,6 @@ body {
 	background-position:center;
 	background-color:#0087be;
 	}
-
 form {
 	
 	width:450;
@@ -42,7 +41,7 @@ form {
 		<p></p>
 		<u><h1>Enter your details</h1></u>
 		<p></p>
-		<form target="_blank" action="process_rec.php" >
+		<form target="_blank" method="POST" action="process_rec.php" >
 <table border="0">
 			<tbody><tr>
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Name:</b></center></label></td>
@@ -54,13 +53,13 @@ form {
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><label><center><b>Emp ID:</b></center></label></td>
 			</tr>
 			<tr>
-				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="empid"></center></td>
+				<td><center><input style="font-size:15px; font-family:verdana;" type="value" name="empid"></center></td>
 			</tr>
 		        <tr>
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><label><center><b>Hospital ID:</b></center></label></td>
 			</tr>
 			<tr>
-				<td><center><input style="font-size:15px; font-family:verdana;" type="text" name="hid"></center></td>
+				<td><center><input style="font-size:15px; font-family:verdana;" type="value" name="hospid"></center></td>
 			</tr>
 		        
 			<tr>
@@ -68,7 +67,7 @@ form {
 			</tr>
 
 			<tr>
-				<td><textarea style="font-size:18px; font-family:verdana;" rows="5" cols="30" name="address"></textarea></td>
+				<td><textarea style="font-size:18px; font-family:verdana;" rows="5" cols="30" name="addr"></textarea></td>
 			</tr>
 
 			
@@ -76,7 +75,7 @@ form {
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px;  font-family:verdana;"><center><label><b>Phone No:</b></center></label></td>
 			</tr>
 			<tr>
-				<td><center><input style="font-size:18px;  font-family:verdana;" type="tel" name="phno"></center></td>
+				<td><center><input style="font-size:18px;  font-family:verdana;" type="tel" name="phone"></center></td>
 			</tr>
 			<tr>
 				<td style="FONT-SIZE:18px;LINE-HEIGHT:40px; font-family:verdana;"><label><center><b>Blood Group:</b></center></label></td>
@@ -102,9 +101,12 @@ form {
 			<tr><td>
 			<br>
 				<font color="red"><center>All fields are mandatory</center></font>
-			<br><br>
+			<br>
 			</td></tr>
+			<tr><td><center><h3><a href='dontmind.html'>HOME</a></h3></center></td>
+			</tr>
 			</tbody>
+			
 </center>
 </form>
 </div>
