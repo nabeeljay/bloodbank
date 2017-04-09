@@ -8,7 +8,7 @@
 	body
 	{
 		
-		background-image: url("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwia06as--LSAhVEPI8KHac2C98QjRwIBw&url=http%3A%2F%2Fwww.zingerbug.com%2FBackgrounds%2Findex_pages%2Fsmiley_faces_page1.htm&psig=AFQjCNFl5KY1Co00qI-RVB8GiyMbd2D68Q&ust=1490026402468197");
+		background-image: url("http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-10.jpg");
 		background-attachement:center;
 		background-size:cover;
 	 }
@@ -18,10 +18,6 @@
 	    	border-radius: 2px;
 	    	padding: 5px;
 	    	width: 150px;
-	}
-	img:hover 
-	{
-		box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 	}
 	h1
 	{
@@ -37,25 +33,17 @@
 	a:visited {
     color: white;
 	}
-	
-	blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+	table {
+    border-collapse: collapse;
+    width: 100%;
 }
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+
+th, td {
+    text-align: left;
+    padding: 8px;
 }
-blockquote p {
-  display: inline;
-}
+
+tr:nth-child(even){background-color: #f2f2f2}
 	</style>
 <table border="1" bordercolor="green"bgcolor="yellow">
 <tr>
