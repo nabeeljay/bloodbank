@@ -1,6 +1,21 @@
 <html>
 <body>
-<table border="1" bordercolor="green"bgcolor="yellow">
+<center>
+<style>
+body {
+	font-family:verdana;
+	font-size:25px;
+}
+table {
+	opacity:0.8;
+}
+a {
+   font-family:verdana;
+  font-size: 20px;
+  color: black;
+}
+</style>
+<table bgcolor="white" frame="vside" rules="all" cellspacing="100px"cellpadding="15px">
 <tr>
 	<td>Name</td>
 	<td>Sex</td>
@@ -61,6 +76,7 @@ die();
 ?>
 </tr>
 </table>
-<a href='index.html'>Return to main page</a>
+<a href='dontmind.html'>Return to main page</a>
+</center>
 </body>
 </html>
