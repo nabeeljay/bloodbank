@@ -1,3 +1,17 @@
+<html>
+<body>
+<style>
+ body {
+   text-family:verdana;
+  text-size:22px;
+ }
+a {
+   font-family:verdana;
+  font-size: 20px;
+  color: black;
+}
+ </style>
+
 <?php
  
 require 'connection.php';
@@ -18,8 +32,10 @@ if (!$success) {
  
 echo "Thank You For Registering! We will be contacting you shortly <br>";
 echo "<a href='index.html'>Return to main page</a>"; 
-header('Refresh: 5; URL=index.html');
+header('Refresh: 5; URL=dontmind.html');
 $conn->close();
 die();
 ?>
 
+</body>
+</html>
