@@ -1,5 +1,5 @@
 <html>
-<body>
+<body background="http://www.clker.com/cliparts/c/1/3/3/12930883391149431275blood-scarlet-red-splash.jpg">
 <center>
 <style>
 body {
