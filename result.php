@@ -11,18 +11,60 @@
 		background-image: url("http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-10.jpg");
 		background-attachement:center;
 		background-size:cover;
+		font-family: 'Open Sans', sans-serif;
 	 }
 	h1
 	{
 		color:#800060;
 		text-decoration: underline;
 	}
+		h11
+	{
+		color:rgb(0, 0, 102);
+		font-size: 250%;
+		
+	}
+	h12
+	{
+		color:rgb(255, 102, 102);
+		font-size: 250%;
+		
+	}
+	h13
+	{
+		color:rgb(51, 51, 204);
+		font-size: 250%;
+		
+	}
 	a:link {
-    color: #660066;
+    color: white;
 	}
 	a:visited {
-    color: #660066;
-	}
+    color: white;
+		}
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
 	table {
 		color: #333;
 		font-family: Helvetica, Arial, sans-serif;
@@ -55,8 +97,23 @@
 	tr:nth-child(odd) td { background: #ffb3b3; }
 
 	tr td:hover { background: #660033; color: #ffccff; } /* Hover cell effect! *
-	</style>
 	
+	</style>
+	<center>
+		<center><h11>ONLINE</h11><h12> BLOOD </h12><h13>BANK</h13></center>
+<br>
+	<ul>
+	<li><a href='index.html'>Home</a></li>
+		<li><a href='donor_registration.html'>Donor Registration</a></li>
+  	<li><a href='recipient_registration.html'>Recipient Registration</a></li>
+  	<li><a href='bank_registration.html'>Blood Bank Registration</a></li>
+ 	<li><a href='result.php'>Registered Donors</a></li>
+		<li><a class="active" href="#home">Registered Donors</a></li>
+	<li><a href='eligibility.html'>Eligibility</a></li>
+	<li><a href='login.html'>Login</a></li>
+	<li><a href='contactus.html'>About Us</a></li>
+	</ul>
+	<br>
 	<center><h1> DONOR'S LIST </h1></center>
 <table border="1">
 <tr>
@@ -104,9 +161,6 @@ else {
 $conn->close();
 ?>
 </table>
-<a href="mailto:kg9810@gmail.com?subject=query&body=message">
-	DROP YOUR REQUEST
-	</a><center><a href="index.html"> BACK TO TOP</a>
 	</center>
 	
 </body>
