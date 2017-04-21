@@ -33,7 +33,35 @@ a {
   text-decoration:none;
   font-family:verdana;
   font-size: 20px;
-  color: black;
+}
+	a:link {
+    color: white;
+	}
+	a:visited {
+    color: white;
+	}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
 }
 </style>	
 </head>
@@ -43,12 +71,20 @@ a {
 <div>
 	<div>
 		<center>
-		<p></p>
-		<u><b><font size="30">Recipient Registration</font></b></u>
-		<p></p>
-		<p></p>
+			<center><h11>ONLINE</h11><h12> BLOOD </h12><h13>BANK</h13></center>
+	<br>
+	<ul>
+  	<li><a class="active" href="#home">Home</a></li>
+	<li><a href='donor_registration.html'>Donor Registration</a></li>
+  	<li><a href='recipient_registration.html'>Recipient Registration</a></li>
+  	<li><a href='bank_registration.html'>Blood Bank Registration</a></li>
+ 	<li><a href='result.php'>Registered Donors</a></li>
+	<li><a href='eligibility.html'>Eligibility</a></li>
+	<li><a href='login.html'>Login</a></li>
+	<li><a href='contactus.html'>About Us</a></li>	
+	</ul>
+	<br>
 		<u><h1>Enter your details</h1></u>
-		<p></p>
 		<form target="_blank" method="POST" action="process_rec.php" >
 <table border="0">
 			<tbody><tr>
@@ -110,9 +146,7 @@ a {
 			<br>
 				<font color="red"><center>All fields are mandatory</center></font>
 			<br>
-			</td></tr>
-			<tr><td><center><h3><a href='dontmind.html'>HOME</a></h3></center></td>
-			</tr>
+				</td></tr>
 			</tbody>
 			
 </center>
