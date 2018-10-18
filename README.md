@@ -1,2 +1,2 @@
 # bloodbank
-Implementation of a Blood Bank's database using HTML and PHP/JS/CSS
+Implementation of a Blood Bank Management System using HTML/CSS/JS and PHP/MySQL
